@@ -1,0 +1,54 @@
+1. CREATE KEYSPACE sampleDemoDB
+WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+
+2. ALTER KEYSPACE sampleDemoDB
+WITH replication = {'class':'SimpleStruse ategy', 'replication_factor' : 1};
+
+3. CREATE TABLE employee(
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   );
+4. select  * from employee ;
+
+5. INSERT INTO employee (emp_id, emp_name, emp_city,
+   emp_phone, emp_sal) VALUES(1,'ram', 'Hyderabad', 9848022338, 50000);
+
+  INSERT INTO employee (emp_id, emp_name, emp_city,
+   emp_phone, emp_sal) VALUES(2,'robin', 'Hyderabad', 9848022339, 40000);
+
+  INSERT INTO employee (emp_id, emp_name, emp_city,
+   emp_phone, emp_sal) VALUES(3,'rahman', 'Chennai', 9848022330, 45000);
+
+   INSERT INTO employee (emp_id, emp_name, emp_city,
+   emp_phone, emp_sal) VALUES(5,'mani', 'gwalior', 9848022344, 55000);
+
+   INSERT INTO employee (emp_id, emp_name, emp_city,
+   emp_phone, emp_sal) VALUES(4,'man', 'morena', 9848022344, 55000);
+
+6. select * from employee;
+
+7. DELETE emp_sal FROM emp WHERE emp_id=3;
+
+8. TRUNCATE employee;
+
+9 . drop table employee;
+
+10. CREATE TABLE data(name text PRIMARY KEY, email list<text>);
+
+11. INSERT INTO data(name, email) VALUES ('ramu',
+['abc@gmail.com','cba@yahoo.com'])
+
+INSERT INTO data(name, email) VALUES ('abhishek',
+['abhishek@gmail.com','cba@gmail.com'])
+
+INSERT INTO data(name, email) VALUES ('anil',
+['anil@gmail.com','anil@yahoo.com'])
+
+12. select * from data;
+
+
+ 
+
+
